@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disaster Management</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- dashboard section -->
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-container">
+            <img src="disaster management logo.jpeg" alt="logo" class="logo" />
+            <div class="logo-text">Disaster Management</div>
+          </div>
+          <div class="nav-items">
+            <!-- for nav-items -->
+            <div><a href="#Flood" class="menu">Flood</a></div>
+            <div><a href="#Land-Slide" class="menu">Land Slide</a></div>
+            <div><a href="#Earth-Quake" class="menu">Earth Quake</a></div>
+            <div><a href="#Forest-Fire" class="menu">Forest Fire</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- marquee tag div -->
+      <div class="marquee-panel">
+        <marquee behavior="" direction=""
+          >Floods and landslides on August 14,2023 in the Indian Himalayan
+          Region killed at least 72 people</marquee
+        >
+      </div>
+
+      <div class="rescue-section">
+        <img src="rescue2-image.jpg" alt="image" class="rescue-image" />
+        <div class="rescue-about">
+          <!-- <h2 class="rescue-about-heading">Disaster Management</h2> -->
+          <span class="rescue-about-heading"></span>
+          <p>
+            Disaster management involves preparing for, responding to, and
+            recovering from natural and man-made disasters. It includes
+            mitigation strategies to reduce risk, preparedness plans like drills
+            and education, efficient response efforts during crises, and
+            recovery initiatives to rebuild and restore affected communities.
+            The goal is to minimize the impact on human life, property, and the
+            environment.
+          </p>
+        </div>
+      </div>
+
+      <!-- div for static map -->
+      <div class="static-map-section">
+        <div class="static-map-heading">Impact Zones and Rainfall Data</div>
+
+        <div class="map-section">
+          <div class="disaster-zone-section">
+            <img
+              src="disaster zone.jpeg"
+              alt="disaster zones of uttarakhand"
+              class="ds-image"
+            />
+            <div class="disaster-zones-about">
+              <h2 class="disaster-zone-heading">
+                Disaster zones of Uttarakhand
+              </h2>
+              <p>
+                Uttarakhand, a northern state in India, is prone to a variety of
+                natural disasters, including landslides, floods, and
+                earthquakes. The region's mountainous terrain and heavy monsoon
+                rains contribute to frequent landslides and flash floods,
+                particularly in areas like Kedarnath, Uttarkashi, and Chamoli.
+                The state's vulnerability is heightened by rapid urbanization,
+                deforestation, and climate change, making disaster management
+                and preparedness crucial.
+              </p>
+            </div>
+          </div>
+
+          <div class="avg-rainfall-section">
+            <img
+              src="avg rainfall 2.png"
+              alt="average rainfall map of Uttarakhand"
+              class="avg-rainfall-image"
+            />
+            <div class="avg-rainfall-about">
+              <h2 class="avg-rainfall-heading">
+                Average Rainfall Data of Uttarakhand
+              </h2>
+
+              <p>
+                Uttarakhand receives significant rainfall, especially during the
+                monsoon season from June to September. The average annual
+                rainfall varies across the state, with the plains receiving
+                around 1,200 mm and the hilly regions, particularly the
+                foothills of the Himalayas, experiencing up to 2,500 mm. This
+                rainfall is crucial for the state's rivers but also increases
+                the risk of landslides and floods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dynamic map section -->
+
+      <div class="dynamic-map" style="display: flex; justify-content: center; align-items: center;">
+        <!-- source -->
+        <iframe src="./dynamic.html" width="95%" style="margin: 0 auto; width: 95wh; height: 600px;"></iframe>
+      </div>
+
+      <!-- flood-section -->
+
+      <div class="flood-section" id="Flood">
+        <h2 class="flood-heading">Flood Safety and Preparedness</h2>
+        <!-- desc for flood -->
+        <div class="flood-about">
+          <p>
+            A flood is an overflow of water that submerges land which is usually
+            dry. Floods can occur due to a variety of reasons, including heavy
+            rainfall, river overflow, storm surges from cyclones or tsunamis,
+            rapid melting of ice and snow, or dam breaks. These natural
+            disasters can cause widespread damage to homes, infrastructure, and
+            agriculture, disrupt transportation and communication networks, and
+            pose serious risks to human life. Floods not only lead to immediate
+            destruction but also have long-term impacts on affected communities,
+            including economic loss, health risks from waterborne diseases, and
+            displacement of populations.
+          </p>
+        </div>
+
+        <!-- static map for flood -->
+        <div class="map-desc">
+          <div>
+            <!--flood prone area map   -->
+            <img
+              src="flood.webp"
+              alt="image of flood prone area"
+              class="flood-map"
+            />
+          </div>
+
+          <!-- flood prevention -->
+          <div class="flood-preventive-measures">
+            <div class="box">
+              <span class="icon" onclick="toggleText1()"
+                >Tips to avoid flooding<img src="menu-burger.png" alt="" />
+              </span>
+              <p class="hidden-text1">
+                <!-- <ul >
+                            <li>Improve drainage systems to prevent water buildup.</li>
+                            <li>Regularly clean gutters and drains to prevent blockages.</li>
+                            
+                            <li>Reforest and conserve natural vegetation to enhance water absorption.</li>
+                            
+                        </ul> -->
+                Improve drainage systems to prevent water buildup.<br />
+                Regularly clean gutters and drains to prevent blockages.<br />
+                Build flood barriers or levees in flood-prone areas.<br />
+                Reforest and conserve natural vegetation to enhance water
+                absorption.<br />
+                Implement proper land use and zoning regulations.
+              </p>
+            </div>
+
+            <div class="box">
+              <span class="icon" onclick="toggleText2()"
+                >Emergency Items in Case of Flood:<img
+                  src="menu-burger.png"
+                  alt=""
+                />
+              </span>
+              <p class="hidden-text2">
+                First aid kit and essential medications.<br />
+                Portable water and non-perishable food supplies.<br />
+                Waterproof flashlight and batteries.<br />
+                Important documents in a waterproof bag.<br />
+                Portable phone charger and emergency contact information.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- static map for earthquake -->
+      <div class="eq-section" id="Earth-Quake">
+        <h2 class="eq-heading">Understanding Earthquakes: Mapping Risks</h2>
+        <!-- desc for earthquake -->
+        <div class="eq-about">
+          <p>
+            An earthquake is a natural phenomenon characterized by the sudden
+            shaking of the Earth's surface due to the movement of tectonic
+            plates beneath it. This movement releases energy in the form of
+            seismic waves, which can cause the ground to tremble and lead to
+            significant destruction, such as collapsing buildings, landslides,
+            and tsunamis. Earthquakes vary in magnitude, with some being minor
+            tremors and others causing widespread devastation. They often strike
+            without warning, making preparedness and rapid response crucial to
+            minimize their impact on communities.
+          </p>
+        </div>
+
+        <!-- static map for flood -->
+        <div class="map-desc">
+          <!-- flood prevention -->
+          <div class="eq-preventive-measures">
+            <div class="box">
+              <span class="icon" onclick="toggleText3()"
+                >Tips to Avoid Earthquake Damage:
+                <img src="menu-burger.png" alt="" />
+              </span>
+              <p class="hidden-text3">
+                Construct buildings with earthquake-resistant designs.<br />
+                Secure heavy objects and furniture to walls.<br />
+                Develop and practice an emergency evacuation plan.<br />
+                Avoid building in fault zones.<br />
+                Regularly update and enforce building codes.<br />
+              </p>
+            </div>
+
+            <div class="box">
+              <span class="icon" onclick="toggleText4()"
+                >Emergency Items in Case of Earthquake:
+                <img src="menu-burger.png" alt="" />
+              </span>
+              <p class="hidden-text4">
+                Emergency kit with water, food, and first aid.<br />
+                Sturdy shoes and protective clothing.<br />
+                Battery-powered radio for updates.<br />
+                Whistle to signal for help.<br />
+                Flashlight and extra batteries.<br />
+              </p>
+            </div>
+          </div>
+          <div>
+            <!--flood prone area map   -->
+            <img
+              src="Earthquake-Map.png"
+              alt="image of major earthquake areas"
+              class="earthquake-map"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- static map for landslide -->
+      <div class="landslide-section" id="Land-Slide">
+        <h2 class="landslide-heading">Understaing Land Slides and Mapping</h2>
+        <!-- desc for flood -->
+        <div class="landslide-about">
+          <p>
+            A landslide is the movement of rock, earth, or debris down a slope
+            due to gravity. This natural disaster can be triggered by a variety
+            of factors, including heavy rainfall, earthquakes, volcanic
+            activity, or human activities such as deforestation and
+            construction. Landslides can occur suddenly and without warning,
+            posing significant risks to human life, infrastructure, and the
+            environment. They often result in the destruction of homes, roads,
+            and other structures, and can disrupt essential services and
+            communication networks.
+          </p>
+        </div>
+
+        <!-- static map for landslide -->
+        <div class="map-desc">
+          <div>
+            <!--flood prone area map   -->
+            <img
+              src="landslide-image2.png"
+              alt="image of  major landslide area "
+              class="landslide-map"
+            />
+          </div>
+
+          <!-- flood prevention -->
+          <div class="flood-preventive-measures">
+            <div class="box">
+              <span class="icon" onclick="toggleText5()"
+                >Tips to Avoid Landslide Damage:
+                <img src="menu-burger.png" alt="" />
+              </span>
+              <p class="hidden-text5">
+                Avoid building on steep slopes or unstable land.<br />
+                Plant deep-rooted vegetation to stabilize soil.<br />
+                Monitor and maintain drainage systems.<br />
+                Build retaining walls where necessary.<br />
+                Heed weather warnings and evacuate when advised.<br />
+              </p>
+            </div>
+
+            <div class="box">
+              <span class="icon" onclick="toggleText6()"
+                >Emergency Items in Case of Landslide:
+                <img src="menu-burger.png" alt="" />
+              </span>
+              <p class="hidden-text6">
+                Sturdy helmet and gloves.<br />
+                Portable first aid kit.<br />
+                Waterproof bag for valuables.<br />
+                Rope and emergency whistle.<br />
+                Battery-powered flashlight and radio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- static map for forest fire -->
+      <div class="forestfire-section" id="Forest-Fire">
+        <h2 class="forestfire-heading">Forest Fire Dynamics and Impact</h2>
+        <!-- desc for forestfire -->
+        <div class="forestfire-about">
+          <p>
+            A forest fire, also known as a wildfire, is an uncontrolled fire
+            that spreads rapidly through vegetation, such as forests,
+            grasslands, and brush. These fires can start naturally from
+            lightning strikes or be caused by human activities, such as
+            campfires, discarded cigarettes, or arson. Forest fires can spread
+            quickly, especially in hot, dry, and windy conditions, and can cause
+            widespread destruction to ecosystems, wildlife habitats, and human
+            communities. They release large amounts of carbon dioxide and other
+            pollutants into the atmosphere, contributing to air quality
+            degradation and climate change.
+          </p>
+        </div>
+
+        <!-- static map for forestfire -->
+        <div class="map-desc">
+          <!-- forest fire prevention -->
+          <div class="forestfire-preventive-measures">
+            <div class="box">
+              <span class="icon" onclick="toggleText7()"
+                >Tips to Avoid Forest Fire Damage:
+                <img src="menu-burger.png" alt="" />
+              </span>
+              <p class="hidden-text7">
+                Avoid leaving campfires unattended.<br />
+                Dispose of cigarette butts properly.<br />
+                Clear dry leaves and debris around properties.<br />
+                Maintain firebreaks and clear vegetation.<br />
+                Follow local fire advisories and regulations.
+              </p>
+            </div>
+
+            <div class="box">
+              <span class="icon" onclick="toggleText8()"
+                >Emergency Items in Case of Forest Fire:
+                <img src="menu-burger.png" alt="" />
+              </span>
+              <p class="hidden-text8">
+                Respiratory masks and protective eyewear.<br />
+                Fire blanket and extinguisher.<br />
+                Non-perishable food and water supply.<br />
+                Maps and a pre-planned evacuation route.<br />
+                Emergency contact information and battery-powered radio.
+              </p>
+            </div>
+          </div>
+          <div>
+            <!--flood prone area map   -->
+            <img
+              src="forest-fire-image.webp"
+              alt="image of major forest-fire zones"
+              class="forestfire-map"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer" id="#emergency">
+        <div class="footer-text">Contact In Case Of Emergency!!</div>
+
+        <div class="contact-links">
+          <div class="contact1">
+            <img
+              src="telephone-handle-silhouette.png"
+              alt="img"
+              class="telephone-image"
+            />Uttarakhand Disaster Management Center<br /><br />+91-135-2710334
+          </div>
+          <div class="contact2">
+            <img
+              src="telephone-handle-silhouette.png"
+              alt=""
+              class="telephone-image"
+            />For Dehradun:<br /><br />+91-135-2626066
+          </div>
+          <div class="contact3">
+            <img
+              src="telephone-handle-silhouette.png"
+              alt=""
+              class="telephone-image"
+            />For Uttarkashi:<br /><br />
+            +91-1374-222715
+          </div>
+          <div class="contact4">
+            <img
+              src="telephone-handle-silhouette.png"
+              alt=""
+              class="telephone-image"
+            />National Disaster Response Force (NDRF):<br /><br />
+            +91-11-24363260
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--this is wrapper closing div -->
+
+    <script src="index.js"></script>
+
+    <!-- <script>
+        feather.replace();
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var typeData = new Typed(".rescue-about-heading", {
+        strings: ["Disaster Management"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
+
+    <div class="notification">
+      <span class="span" onclick="toggleTexte()"
+        ><img src="bell.png" alt="image" id="n-logo"
+      /></span>
+      <span class="hidden-text">You are in danger zone!!</span>
+    </div>
+  </body>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script>
+    // Initialize the map and set its view
+    const map = L.map("map").setView([51.505, -0.09], 13);
+
+    // Load and display tile layer on the map
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+    // Define different custom icons
+    const icon1 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/mountains.png", // URL to the first icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon2 = L.icon({
+      iconUrl:
+        "https://www.vanuatubeachbar.com/wp-content/uploads/leaflet-maps-marker-icons/forest2.png", // URL to the second icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon3 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/swimming2.png", //url to the third icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon4 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/swimming2.png", //url to the fourth icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon5 = L.icon({
+      iconUrl:
+        "https://www.vanuatubeachbar.com/wp-content/uploads/leaflet-maps-marker-icons/forest2.png", //url to the 5th icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon6 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/mountains.png", //url to the 6th icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon7 = L.icon({
+      iconUrl:
+        "https://www.vanuatubeachbar.com/wp-content/uploads/leaflet-maps-marker-icons/caution.png", //url to the 7th icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon8 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/mountains.png", //url to the 8th icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon9 = L.icon({
+      iconUrl:
+        "https://www.vanuatubeachbar.com/wp-content/uploads/leaflet-maps-marker-icons/caution.png", //url to the 9th icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon10 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/swimming2.png", //url to the 10th icon
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon11 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/home.png", //url to the 11th icon for SHELTER
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon12 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/home.png", //url to the 12th icon for SHELTER
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    const icon13 = L.icon({
+      iconUrl:
+        "https://www.winsorfireform.com/wp-content/uploads/leaflet-maps-marker-icons/home.png", //url to the 13th icon for SHELTER
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, -32],
+    });
+
+    // Add markers with different icons
+    L.marker([30.2863, 78.9804], { icon: icon1 })
+      .addTo(map)
+      .bindPopup("<b> Rudraprayag: LandSlide</b> ")
+      .openPopup();
+
+    L.marker([30.4598, 78.0662], { icon: icon2 })
+      .addTo(map)
+      .bindPopup("<b>Mussoorie: Forest Fire </b> ")
+      .openPopup();
+
+    L.marker([29.9457, 78.1642], { icon: icon3 })
+      .addTo(map)
+      .bindPopup("<b>Haridwar: Flood </b> ")
+      .openPopup();
+
+    L.marker([30.1465, 78.5981], { icon: icon4 })
+      .addTo(map)
+      .bindPopup("<b>Devprayag: Flood </b> ")
+      .openPopup();
+
+    L.marker([30.1526, 78.7796], { icon: icon5 })
+      .addTo(map)
+      .bindPopup("<b>Pauri Garhwal: Forest Fire</b>")
+      .openPopup();
+
+    L.marker([30.4046, 79.3186], { icon: icon6 })
+      .addTo(map)
+      .bindPopup("<b>Gopeshwar: LandSlide</b> ")
+      .openPopup();
+
+    L.marker([30.729, 78.4435], { icon: icon7 })
+      .addTo(map)
+      .bindPopup("<b>Uttarkashi: EarthQuake</b> ")
+      .openPopup();
+
+    L.marker([29.5852, 80.2091], { icon: icon8 })
+      .addTo(map)
+      .bindPopup("<b>Pithoragarh: LandSlide</b> ")
+      .openPopup();
+
+    L.marker([30.7352, 79.0669], { icon: icon9 })
+      .addTo(map)
+      .bindPopup("<b>Kedarnath: EarthQuake</b> ")
+      .openPopup();
+
+    L.marker([30.3894, 78.4805], { icon: icon10 })
+      .addTo(map)
+      .bindPopup("<b>Tehri: Flood</b> ")
+      .openPopup();
+
+    L.marker([30.3165, 78.0322], { icon: icon11 })
+      .addTo(map)
+      .bindPopup("<b>Dehradun: Shelter</b> ")
+      .openPopup();
+
+    L.marker([29.3799, 79.4549], { icon: icon12 })
+      .addTo(map)
+      .bindPopup("<b>Nainital: Shelter</b> ")
+      .openPopup();
+
+    L.marker([29.5966, 79.4323], { icon: icon13 })
+      .addTo(map)
+      .bindPopup("<b>Almora: Shelter</b> ")
+      .openPopup();
+  </script>
+</html>

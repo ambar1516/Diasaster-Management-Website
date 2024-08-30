@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+
+.notification{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 999 !important;
+}
+
+#n-logo{
+    height: 30px;
+    width: 30px;  
+}
+
+.hidden-text{
+    display: none;
+}
+
+.notification.active .hidden-text{
+    display: inline;
+}
+
+
+
+#wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    
+}
+
+
+
+
+
+.logo{
+    width: 80px;
+}
+
+.logo-text{
+    margin-left: -0.2rem;
+    font-size: 28px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    padding: 0 4rem;
+}
+
+.nav-items div{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.nav-items div a{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    
+}
+.nav-items div :hover{
+    font-weight: bold;
+    transition: 0.8ss;
+}
+
+.admin-login{
+    padding: 0.9rem;
+    background-color: #1E2A5E;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+
+.marquee-panel{
+    color: white;
+    background-color: cadetblue;
+    height: 50px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.rescue-section{
+    width: fit-content;
+    position: relative;
+    z-index: -1;
+    
+    
+}
+
+.rescue-image{
+    width: 100vw;
+    height: 750px;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.9;
+    
+
+}
+
+.rescue-about-heading{
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: #FEFAE0;
+}
+
+.rescue-about{
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: 50px;
+    font-size: 20px;
+    width: 65%;
+    text-align: justify;
+    padding-left: 10px;
+    
+
+}
+
+
+.static-map-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    padding-bottom: 5px;
+    flex-direction: column;
+   
+    
+    
+}
+
+.static-map-heading{
+    font-size: 30px;
+    font-weight: 500;
+    color: #821131;
+}
+
+.map-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.disaster-zone-section{
+    /* height: 500px; */
+    margin-left: 4rem;
+    width: 50%;
+}
+
+.ds-image{
+    width: 650px;
+    height: 450px;
+    
+    
+}
+
+/* .ds-image:hover{
+    transform: scale(1.02);
+    /* transition-duration: 0.6s; */
+    /* transition: 0.4s; 
+}*/
+
+
+.disaster-zones-about{
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.disaster-zone-heading{
+    padding-bottom: 15px;
+}
+
+.avg-rainfall-section{
+    width: 50%;
+    overflow: hidden;
+    padding-right: 20px;
+
+}
+
+.avg-rainfall-image{
+    width: 605px;
+    height: 450px;
+    
+}
+
+.avg-rainfall-about{
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.avg-rainfall-heading{
+    padding-bottom: 15px;
+}
+
+.flood-section{
+    margin: 0 auto;
+    width: fill;
+    padding-top: 10px;
+
+}
+
+.flood-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #821131;
+    
+}
+
+.flood-about{
+    padding-top: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.map-desc{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.flood-map{
+    width: 800px;
+    padding-top: 30px;
+    padding-left: 40px;
+    
+}
+
+/* styles.css */
+.box {
+    border: 2px solid #821131;
+    padding: 20px;
+    width: 600px;
+    /* text-align: center; */
+    margin: 50px auto;
+    position: relative;
+    border-radius: 25px;
+   
+    
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+.hidden-text1 {
+    display: none; /* Initially hide the text */
+    margin-top: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.hidden-text2 {
+    display: none;
+    margin-top: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.eq-section{
+    margin: 0 auto;
+    width: fill;
+    padding-top: 10px;
+    margin-top: 40px;
+
+}
+
+.eq-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #821131;
+    
+}
+
+.eq-about{
+    padding-top: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+
+
+
+.earthquake-map{
+    width: 700px;
+    padding-top: 30px;
+    padding-right: 5px;
+    
+}
+
+
+.hidden-text3{
+    display: none;
+    margin-top: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+
+.hidden-text4 {
+    display: none;
+    margin-top: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.landslide-section{
+    margin: 0 auto;
+    width: fill;
+    padding-top: 10px;
+    margin-top: 40px;
+
+}
+
+.landslide-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #821131;
+    
+}
+
+.landslide-about{
+    padding-top: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+
+.landslide-map{
+    width: 800px;
+    padding-top: 30px;
+    padding-right: 5px;
+    padding-left: 20px;
+    
+}
+
+.hidden-text5{
+    display: none;
+    margin-top: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+
+.hidden-text6{
+    display: none;
+    margin-top: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.forestfire-section{
+    margin: 0 auto;
+    width: fill;
+    padding-top: 10px;
+    margin-top: 40px;
+
+}
+
+.forestfire-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #821131;
+    
+}
+
+.forestfire-about{
+    padding-top: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.forestfire-map{
+    width: 800px;
+    padding-top: 30px;
+    height: 550px;
+    
+    
+}
+
+.forestfire-preventive-measures{
+    margin-left: 20px;
+}
+
+
+.hidden-text7{
+    display: none;
+    margin-top: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 17px;
+    
+
+}
+
+
+.hidden-text8 {
+    display: none;
+    margin-top: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+.footer{
+    position: relative;
+    margin-top: -1px;
+    background-color: cadetblue;
+    padding: 2rem;
+    
+}
+
+/* .footer-container{
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    
+    
+} */
+
+.telephone-image{
+    width: 20px;
+    opacity: 0.5;
+    margin-right: 5px;
+    
+}
+
+.footer-text{
+    color: #000080;
+    font-size: 40px;
+
+}
+
+.contact-links{
+    /* justify-content: spacce-around; */
+    display: flex;
+    color: #FEFAE0;
+    justify-content: space-around;
+    gap: 1rem; 
+    padding: 1.2rem;
+    cursor: pointer;
+
+}
+
+.contact-link div{
+    transition: all 0.6s;
+    
+}
+
+.contact-links div:hover{
+    color: #e84949;
+}
+
+
+
+
